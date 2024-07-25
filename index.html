@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="upper_field">
+            <div class="upp">
+                <div class="header_i_nav">
+                    <header class="header">
+                        <div class="header__content">
+                            <div class="left">
+                                <img src="media/calculator.svg" alt="">
+                                <h4>Calculator</h4>
+                            </div>
+                            <div class="buttons">
+                                <button class="button">
+                                    <img src="icons/collapse.svg" alt="c" class="collapse">
+                                </button>
+                                <button class="button">
+                                    <img src="icons/expand.svg" alt="e" class="expand">
+                                </button>
+                                <button class="button">
+                                    <img src="icons/close.svg" alt="c" class="close">
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                    <nav class="nav">
+                        <div class="nav__content">
+                            <div class="left__nav">
+                                <button class="burger-menu">
+                                    <img src="icons/burger-menu.svg" alt="B" id="burger-menu" onclick="open__window()">
+                                    <div class="open__window">
+                                    </div>
+                                </button>
+                                <h2>Classic</h2>
+                                <button class="mini">
+                                    <img src="icons/mini.svg" alt="C">
+                                    <div class="open__mini">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="right__nav">
+                                <img src="icons/history.svg" alt="R" class="history">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="result">
+                    <h3 id="solve"></h3>
+                    <h1 id="input">0</h1>
+                </div>
+            </div>
+            <div class="secondary-buttons">
+                <button class="button">MC</button>
+                <button class="button">MR</button>
+                <button class="button">M+</button>
+                <button class="button">M-</button>
+                <button class="button">MS</button>
+                <button class="button">M</button>
+            </div>
+        </div>
+        <main class="main">
+            <button onclick="add_func('%')" class="button">%</button>
+            <button onclick="add_symbol('CE')" class="button">CE</button>
+            <button onclick="add_symbol('C')" class="button">C</button>
+            <button onclick="add_symbol('Backspace')" class="button Backspace">
+                <p>⌦</p>
+            </button>
+            <button onclick="add_func('1/x')" class="button">1/x</button>
+            <button onclick="add_func('sqr')" class="button">x^2</button>
+            <button onclick="add_func('sqrt')" class="button">√x</button>
+            <button onclick="add_func('/')" class="button" id="b_/">/</button>
+            <button onclick="add_symbol('7')" class="button" id="b_7">7</button>
+            <button onclick="add_symbol('8')" class="button" id="b_8">8</button>
+            <button onclick="add_symbol('9')" class="button" id="b_9">9</button>
+            <button onclick="add_func('*')" class="button" id="b_*">*</button>
+            <button onclick="add_symbol('4')" class="button" id="b_4">4</button>
+            <button onclick="add_symbol('5')" class="button" id="b_5">5</button>
+            <button onclick="add_symbol('6')" class="button" id="b_6">6</button>
+            <button onclick="add_func('-')" class="button" id="b_-">-</button>
+            <button onclick="add_symbol('1')" class="button" id="b_1">1</button>
+            <button onclick="add_symbol('2')" class="button" id="b_2">2</button>
+            <button onclick="add_symbol('3')" class="button" id="b_3">3</button>
+            <button onclick="add_func('+')" class="button" id="b_+">+</button>
+            <button onclick="add_symbol('+/-')" class="button">+/-</button>
+            <button onclick="add_symbol('0')" class="button">0</button>
+            <button onclick="add_symbol('.')" class="button">.</button>
+            <button onclick="add_func('=')" class="button">=</button>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
